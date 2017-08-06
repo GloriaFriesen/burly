@@ -1,12 +1,14 @@
 <div class="container">
     <h1>URL Form</h1>
-    <form>
+    <form #urlForm="ngForm">
       <div class="form-group">
         <label for="url">URL</label>
-        <input type="text" class="form-control" id="url" required>
+        <input type="text" name="url" class="form-control" id="url" required [(ngModel)]="input.url">
       </div>
 
       <button type="submit" class="btn btn-success">Submit</button>
 
     </form>
 </div>
+
+{{input.url}}
