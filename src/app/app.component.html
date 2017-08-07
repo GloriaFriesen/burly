@@ -1,13 +1,20 @@
 <div class="container">
-  <img src="favicon.ico">
-    <h1>bURLy</h1>
+  <div class="header">
+    <h1>burly</h1>
+    <h4>strong URL validation</h4>
+  </div>
+  <hr>
+  <div class="body">
     <form #urlForm="ngForm">
       <div class="form-group">
-        <label for="url">URL</label>
-        <input type="text" [(ngModel)]="field.url" name="field" #field="ngModel" class="form-control" url/>
+        <label for="url">Try out your URL here:</label>
+        <input placeholder="https://myemma.com/" type="text" [(ngModel)]="field.url" name="field" #field="ngModel" class="form-control" url/>
       </div>
-
-      <p *ngIf="field.errors?.url">Invalid URL</p>
-      <p *ngIf="(!urlForm.pristine) && (!field.errors?.url)">Valid URL</p>
+      <p *ngIf="field.errors?.url">Not right yet...</p>
+      <div *ngIf="(!urlForm.pristine) && (!field.errors?.url)">
+        <p>That is one good looking URL. Burly approves.<p>
+        <img src="favicon.ico">
+      </div>
     </form>
+  </div>
 </div>

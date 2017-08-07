@@ -1,0 +1,13 @@
+.header {
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+h1 {
+  font-size: 500%;
+}
+
+.body {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  padding: 20px;
+}

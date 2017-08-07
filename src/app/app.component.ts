@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CustomValidators } from 'ng2-validation';
-import { FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -14,7 +14,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.newForm = this.fb.group({
-      websiteLink: ['', Validators.required]
+
     })
   }
 }
