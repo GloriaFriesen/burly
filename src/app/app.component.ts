@@ -8,8 +8,6 @@ import { FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-
-
   newForm: FormGroup;
 
   constructor(private fb: FormBuilder) { }
@@ -19,6 +17,4 @@ export class AppComponent implements OnInit {
       websiteLink: ['', Validators.required]
     })
   }
-
-
 }

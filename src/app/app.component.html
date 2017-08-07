@@ -7,9 +7,7 @@
         <input type="text" [(ngModel)]="field.url" name="field" #field="ngModel" class="form-control" url/>
       </div>
 
-      <p *ngIf="field.errors?.url">error message</p>
-      <p *ngIf="!field.errors?.url">valid url</p>
-      <!-- <button type="submit" class="btn btn-success">Submit</button> -->
-
+      <p *ngIf="field.errors?.url">Invalid URL</p>
+      <p *ngIf="(!urlForm.pristine) && (!field.errors?.url)">Valid URL</p>
     </form>
 </div>
