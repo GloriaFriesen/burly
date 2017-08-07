@@ -1,14 +1,15 @@
 <div class="container">
-    <h1>URL Form</h1>
+  <img src="favicon.ico">
+    <h1>bURLy</h1>
     <form #urlForm="ngForm">
       <div class="form-group">
         <label for="url">URL</label>
-        <input type="text" name="url" class="form-control" id="url" required [(ngModel)]="input.url">
+        <input type="text" [(ngModel)]="field.url" name="field" #field="ngModel" class="form-control" url/>
       </div>
 
-      <button type="submit" class="btn btn-success">Submit</button>
+      <p *ngIf="field.errors?.url">error message</p>
+      <p *ngIf="!field.errors?.url">valid url</p>
+      <!-- <button type="submit" class="btn btn-success">Submit</button> -->
 
     </form>
 </div>
-
-{{input.url}}
