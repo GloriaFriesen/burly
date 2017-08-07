@@ -1,28 +1,42 @@
 # Burly
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.2.
+#### _By Gloria Friesen_
 
-## Development server
+### Web Application for URL Validation
+Current Version: 1.0 - 08.06.2017
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Description
 
-## Code scaffolding
+Web based form to check the validity of an inputted URL.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
+### Intended Users
 
-## Build
+The great people of Emma or anyone else that wants to run my application locally and check if they have a URL worth including in an email or webpage.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+## Installation/Setup
 
-## Running unit tests
+* Prerequisites:
+  * node 6.9.x
+  * npm 3.x.x
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+    Verify versions by running `node -v` and `npm -v` in the terminal.
 
-## Running end-to-end tests
+    More recent versions of either will work just fine.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
+    If you need it, download here: <https://nodejs.org/en/download/>
+* In the terminal, run:
+  * `$ git clone <https://github.com/GloriaFriesen/burly>`
+  * `$ cd burly`
+  * `$ npm install`
+  * `npm install -g @angular/cli`
+  * `$ ng serve --open`
 
-## Further help
+## Known Bugs
+None that I know of. But, please, let me know if you find any.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Support and contact details
+Questions? Concerns? Suggestions? Reach out to me via github: <https://github.com/GloriaFriesen>.
+
+## License
+This software is licensed under the MIT license.
+Copyright (c) 2017 Gloria Friesen.
